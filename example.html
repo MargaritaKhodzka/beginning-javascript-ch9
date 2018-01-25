@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>This is a test page</title>
+</head>
+<body>
+  <span>Below is a table</span>
+  <table>
+    <tr>
+      <td>Row 1 Cell 1</td>
+      <td>Row 2 Cell 2</td>
+    </tr>
+  </table>
+
+  <script>
+    var tdElements = document.getElementsByTagName("td")
+
+    for (var i = 0; i < tdElements.length; i++) {
+      tdElements[i].style.color = "red"
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>This is a test page</title>
+</head>
+<body>
+  <h1 id="heading1">My heading</h1>
+  <p id="paragraph1">Some paragraph text...</p>
+
+  <script>
+    var h1Element = document.getElementById("heading1")
+    h1Element.style.color = "red"
+
+    var pElement
+
+    if (h1Element.nextSibling.nodeType == 1) {
+      pElement = h1Element.nextSibling
+    } else {
+      pElement = h1Element.nextSibling.nextSibling
+    }
+    pElement.style.color = "red"
+  </script>
+</body>
+</html>
